@@ -1,0 +1,879 @@
+<body>
+
+    <div class="conter">
+
+        <!-- 耳朵 -->
+
+        <div class="er1"></div>
+
+        <div class="er2"></div>
+
+        <!-- 身体 -->
+
+        <div class="body"></div>
+
+        <!-- 脸上的圈圈 -->
+
+        <div class="quan0">
+
+            <div class="quan1">
+
+                <div class="quan2">
+
+                    <div class="quan3">
+
+                        <div class="quan4">
+
+                            <div class="quan5"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 眼睛 -->
+
+        <div class="eye1"></div>
+
+        <div class="eye2"></div>
+
+        <!-- 鼻子 -->
+
+        <div class="bizi"></div>
+
+        <!-- 手 -->
+
+        <div class="shou1"></div>
+
+        <div class="shou2">
+
+            <div id="outer">
+
+                <div id="div1"></div>
+
+                <div id="div2"></div>
+
+                <div id="div3"></div>
+
+            </div>
+
+        </div>
+
+        <!-- 脚 -->
+
+        <div class="leg1"></div>
+
+        <div class="leg2"></div>
+
+        <div class="text"></div>
+
+        <!-- 嘴巴 -->
+
+        <div class="zuiba"></div>
+
+        <div class="zuiba1"></div>
+
+        <div class="zuiba2"></div>
+
+        <!-- 奥运五环 -->
+
+        <div class="huan1"></div>
+
+        <div class="huan2"></div>
+
+        <div class="huan3"></div>
+
+        <div class="huan4"></div>
+
+        <div class="huan5"></div>
+
+    </div>
+
+</body>
+
+<style>
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    html {
+
+        /* background-image: linear-gradient(pink, #e4f3f6)  */
+
+        background: no-repeat linear-gradient(pink, #e4f3f6);
+
+        color: #000;
+
+        width: 100%;
+
+        height: 100%;
+
+        overflow: hidden;
+
+    }
+
+    /* @keyframes p1 {
+
+        0% {
+
+        }
+
+        100% {
+
+          transform: rotateY(360deg);
+
+        }
+
+      } */
+
+    /* 设置冰墩墩的大概范围 */
+
+    .conter {
+
+        position: absolute;
+
+        /* margin: 100px auto; */
+
+        left: 40%;
+
+        top: -200px;
+
+        animation: body 3s infinite alternate linear;
+
+    }
+
+    /* @keyframes body {
+
+        0% {
+
+        }
+
+        100% {
+
+          transform: rotateY(180deg);
+
+        }
+
+      } */
+
+    .er1,
+
+    .er2 {
+
+        background: #393939;
+
+        width: 81px;
+
+        height: 115px;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        z-index: -1;
+
+    }
+
+    .er1 {
+
+        position: relative;
+
+        top: 280px;
+
+        left: 29px;
+
+    }
+
+    .er2 {
+
+        position: relative;
+
+        top: 160px;
+
+        left: 197px;
+
+    }
+
+    .body {
+
+        position: absolute;
+
+        width: 300px;
+
+        /* height: 400px; */
+
+        height: 350px;
+
+        background-color: #fff;
+
+        border-radius: 88% 88% 62% 68% / 82% 82% 95% 84%;
+
+        border: 8px solid #000;
+
+        margin: 50px auto;
+
+    }
+
+    .quan1 {
+
+        position: relative;
+
+        top: 90px;
+
+        left: 30px;
+
+        width: 250px;
+
+        height: 170px;
+
+        border: 4px solid yellow;
+
+        border-radius: 60% 60% 50% 50%;
+
+    }
+
+    .conter .quan2 {
+
+        position: relative;
+
+        top: 2px;
+
+        left: 1px;
+
+        width: 242px;
+
+        height: 159px;
+
+        border: 4px solid rebeccapurple;
+
+        border-radius: 60% 60% 50% 50%;
+
+    }
+
+    .conter .quan3 {
+
+        position: relative;
+
+        top: 0px;
+
+        left: 0px;
+
+        width: 234px;
+
+        height: 151px;
+
+        border: 4px solid green;
+
+        border-radius: 60% 60% 50% 50%;
+
+    }
+
+    .conter .quan4 {
+
+        position: relative;
+
+        top: 0px;
+
+        left: -2px;
+
+        width: 228px;
+
+        height: 143px;
+
+        border: 4px solid #32cbf3;
+
+        border-radius: 60% 60% 50% 50%;
+
+    }
+
+    .conter .quan5 {
+
+        position: relative;
+
+        top: 0px;
+
+        left: -2px;
+
+        width: 222px;
+
+        height: 137px;
+
+        border: 4px solid red;
+
+        border-radius: 60% 60% 50% 50%;
+
+    }
+
+    .eye1,
+
+    .eye2 {
+
+        width: 70px;
+
+        height: 90px;
+
+        background-color: #393939;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        /* z-index: 21; */
+
+    }
+
+    .eye1 {
+
+        top: 356px;
+
+        left: 65px;
+
+        transform: rotate(50deg);
+
+    }
+
+    .eye2 {
+
+        top: 356px;
+
+        left: 180px;
+
+        transform: rotate(-50deg);
+
+    }
+
+    .eye1:before,
+
+    .eye2:before {
+
+        content: "";
+
+        width: 40px;
+
+        height: 40px;
+
+        border: #fff 5px solid;
+
+        border-radius: 100%;
+
+        position: absolute;
+
+    }
+
+    .eye1:before {
+
+        right: 5px;
+
+        top: 10px;
+
+    }
+
+    .eye2:before {
+
+        left: 6px;
+
+        top: 9px;
+
+    }
+
+    .eye1:after,
+
+    .eye2:after {
+
+        content: "";
+
+        width: 10px;
+
+        height: 10px;
+
+        background: #fff;
+
+        border-radius: 100%;
+
+        position: absolute;
+
+    }
+
+    .eye1:after {
+
+        right: 22px;
+
+        top: 19px;
+
+    }
+
+    .eye2:after {
+
+        left: 38px;
+
+        top: 31px;
+
+    }
+
+    .bizi {
+
+        position: relative;
+
+        top: 0;
+
+        left: 149px;
+
+        width: 20px;
+
+        height: 12px;
+
+        background-color: #393939;
+
+        border-radius: 38% 38% 50% 50%;
+
+    }
+
+    .shou1,
+
+    .shou2 {
+
+        background: #333;
+
+        position: absolute;
+
+        width: 60px;
+
+        height: 80px;
+
+        border-radius: 0 0 30px 30px;
+
+        z-index: -1;
+
+    }
+
+    .shou1 {
+
+        transform: rotate(50deg);
+
+        left: -40px;
+
+        top: 459px;
+
+    }
+
+    .shou2 {
+
+        position: absolute;
+
+        transform: rotate(37deg);
+
+        left: 279px;
+
+        top: 336px;
+
+        height: 120px;
+
+        border-radius: 40% 50% 50% 20%;
+
+        animation: dong 2s infinite alternate linear;
+
+        transform-origin: left bottom;
+
+    }
+
+    @keyframes dong {
+
+        form {
+
+            transform: rotate(27deg);
+
+        }
+
+        to {
+
+            transform: rotate(67deg);
+
+        }
+
+    }
+
+    .shou2:before {
+
+        content: "";
+
+        width: 16px;
+
+        height: 24px;
+
+        background: #bc242c;
+
+        position: absolute;
+
+        border-top-left-radius: 50%;
+
+        border-top-right-radius: 50%;
+
+        transform: rotate(45deg);
+
+        left: 25px;
+
+        top: 21px;
+
+    }
+
+    .shou2:after {
+
+        content: "";
+
+        width: 16px;
+
+        height: 24px;
+
+        background: #bc242c;
+
+        position: absolute;
+
+        border-top-left-radius: 50%;
+
+        border-top-right-radius: 50%;
+
+        transform: rotate(-45deg);
+
+        left: 18px;
+
+        top: 20px;
+
+    }
+
+    .leg1,
+
+    .leg2 {
+
+        background: #333;
+
+        position: absolute;
+
+        width: 63px;
+
+        height: 80px;
+
+        /* border-radius: 0 0 30px 30px; */
+
+        z-index: -1;
+
+    }
+
+    .leg1 {
+
+        left: 72px;
+
+        top: 626px;
+
+        border-radius: 0 0 11px 22px;
+
+    }
+
+    .leg1:after,
+
+    .leg2:after {
+
+        content: "";
+
+        width: 43px;
+
+        height: 30px;
+
+        position: absolute;
+
+        background: #333333;
+
+        border-radius: 30px;
+
+    }
+
+    .leg1:after {
+
+        top: 50px;
+
+        left: 23px;
+
+    }
+
+    .leg2:after {
+
+        top: 50px;
+
+        left: -3px;
+
+    }
+
+    .leg2 {
+
+        left: 180px;
+
+        top: 626px;
+
+        border-radius: 0 0 22px 11px;
+
+    }
+
+    .text {
+
+        position: relative;
+
+        top: 94px;
+
+        left: 114px;
+
+        font: 700 30px "";
+
+    }
+
+    .zuiba {
+
+        position: relative;
+
+        top: -27px;
+
+        left: 132px;
+
+        width: 55px;
+
+        height: 40px;
+
+        background-color: #393939;
+
+        border-radius: 50% 50%;
+
+        z-index: 10;
+
+    }
+
+    .zuiba1 {
+
+        position: relative;
+
+        top: -79px;
+
+        left: 146px;
+
+        width: 25px;
+
+        height: 20px;
+
+        background-color: #fff;
+
+        border-radius: 50% 50%;
+
+        z-index: 10;
+
+    }
+
+    .zuiba2 {
+
+        position: relative;
+
+        top: -70px;
+
+        left: 143px;
+
+        width: 35px;
+
+        height: 20px;
+
+        background-color: #bc242c;
+
+        border-radius: 50% 50%;
+
+        z-index: 10;
+
+    }
+
+    .huan1,
+
+    .huan2,
+
+    .huan3,
+
+    .huan4,
+
+    .huan5 {
+
+        position: relative;
+
+        width: 20px;
+
+        height: 20px;
+
+        border-radius: 50%;
+
+        z-index: 10;
+
+    }
+
+    .huan1 {
+
+        top: 50px;
+
+        left: 117px;
+
+        border: 2px solid #32cbf3;
+
+    }
+
+    .huan2 {
+
+        top: 26px;
+
+        left: 142px;
+
+        border: 2px solid #333;
+
+    }
+
+    .huan3 {
+
+        top: 2px;
+
+        left: 167px;
+
+        border: 2px solid red;
+
+    }
+
+    .huan4 {
+
+        top: -14px;
+
+        left: 129px;
+
+        border: 2px solid tan;
+
+    }
+
+    .huan5 {
+
+        top: -38px;
+
+        left: 155px;
+
+        border: 2px solid green;
+
+    }
+</style>
+
+<script>
+
+    function snow() {
+
+        // 1、定义一片雪花模板
+
+        var flake = document.createElement("div");
+
+        // 雪花字符 ❄❉❅❆✻✼❇❈❊✥✺
+
+        flake.innerHTML = "❅";
+
+        flake.style.cssText = "position:absolute;color:#fff;";
+
+        //获取页面的高度 相当于雪花下落结束时Y轴的位置
+
+        var documentHieght = window.innerHeight;
+
+        //获取页面的宽度，利用这个数来算出，雪花开始时left的值
+
+        var documentWidth = window.innerWidth;
+
+        //定义生成一片雪花的毫秒数
+
+        var millisec = 10;
+
+        //2、设置第一个定时器，周期性定时器，每隔一段时间（millisec）生成一片雪花；
+
+        setInterval(function () {
+
+            //页面加载之后，定时器就开始工作
+
+            //随机生成雪花下落 开始 时left的值，相当于开始时X轴的位置
+
+            var startLeft = Math.random() * documentWidth;
+
+            //随机生成雪花下落 结束 时left的值，相当于结束时X轴的位置
+
+            var endLeft = Math.random() * documentWidth;
+
+            //随机生成雪花大小
+
+            var flakeSize = 3 + 20 * Math.random();
+
+            //随机生成雪花下落持续时间
+
+            var durationTime = 4000 + 7000 * Math.random();
+
+            //随机生成雪花下落 开始 时的透明度
+
+            var startOpacity = 0.7 + 0.3 * Math.random();
+
+            //随机生成雪花下落 结束 时的透明度
+
+            var endOpacity = 0.2 + 0.2 * Math.random();
+
+            //克隆一个雪花模板
+
+            var cloneFlake = flake.cloneNode(true);
+
+            //第一次修改样式，定义克隆出来的雪花的样式
+
+            cloneFlake.style.cssText += `
+
+      left: ${startLeft}px;
+
+      opacity: ${startOpacity};
+
+      font-size:${flakeSize}px;
+
+      top:-25px;
+
+       transition:${durationTime}ms;`;
+
+            //拼接到页面中
+
+            document.body.appendChild(cloneFlake);
+
+            //设置第二个定时器，一次性定时器，
+
+            //当第一个定时器生成雪花，并在页面上渲染出来后，修改雪花的样式，让雪花动起来；
+
+            setTimeout(function () {
+
+                //第二次修改样式
+
+                cloneFlake.style.cssText += `
+
+       left: ${endLeft}px;
+
+       top:${documentHieght}px;
+
+       opacity:${endOpacity};`;
+
+                //4、设置第三个定时器，当雪花落下后，删除雪花。
+
+                setTimeout(function () {
+
+                    cloneFlake.remove();
+
+                }, durationTime);
+
+            }, 0);
+
+        }, millisec);
+
+    }
+
+    snow();
+
+</script>
